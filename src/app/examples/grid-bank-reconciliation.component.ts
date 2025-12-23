@@ -19,6 +19,9 @@ const currencyFormatter: Formatter = (row: number, cell: number, value: any, col
     return '';
   }
   const amount = parseFloat(value);
+  if (isNaN(amount)) {
+    return '';
+  }
   const color = amount < 0 ? 'red' : 'green';
   return `<span style="color: ${color};">$${amount.toFixed(2)}</span>`;
 };
@@ -35,7 +38,6 @@ export class GridBankReconciliationComponent implements OnInit {
       <li><strong>Filtering</strong> - Filter by status, date range, or amount</li>
       <li><strong>Sorting</strong> - Multi-column sorting for transaction analysis</li>
       <li><strong>Row Selection</strong> - Select transactions for matching</li>
-      <li><strong>Inline Editing</strong> - Edit transaction details</li>
       <li><strong>Export</strong> - Export reconciliation data to CSV</li>
       <li><strong>Auto-resize</strong> - Responsive grid layout</li>
     </ul>
