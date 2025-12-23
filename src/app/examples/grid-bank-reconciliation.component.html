@@ -1,0 +1,17 @@
+<div class="container">
+  <h2>{{title}}</h2>
+  <div class="subtitle" [innerHTML]="subTitle"></div>
+
+  <div style="margin-bottom: 10px;">
+    <button class="btn btn-primary btn-sm" (click)="exportToCSV()">
+      <i class="fa fa-download"></i> Export to CSV
+    </button>
+  </div>
+
+  <angular-slickgrid gridId="grid-bank-reconciliation"
+            [columnDefinitions]="columnDefinitions"
+            [gridOptions]="gridOptions"
+            [dataset]="dataset"
+            (onAngularGridCreated)="angularGridReady($event)">
+  </angular-slickgrid>
+</div>
