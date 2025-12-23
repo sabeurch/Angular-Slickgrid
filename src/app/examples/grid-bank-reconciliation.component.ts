@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Column, FieldType, Formatter, Formatters, GridOption, AngularGridInstance } from './../modules/angular-slickgrid';
+import { Column, FieldType, FilterType, Formatter, Formatters, GridOption, AngularGridInstance } from './../modules/angular-slickgrid';
 
 // Custom formatter for transaction status
 const statusFormatter: Formatter = (row: number, cell: number, value: any, columnDef: Column, dataContext: any) => {
@@ -128,7 +128,7 @@ export class GridBankReconciliationComponent implements OnInit {
         type: FieldType.string,
         width: 120,
         filter: {
-          model: Formatters.multipleSelect,
+          type: FilterType.multipleSelect,
           collection: [
             { value: 'Matched', label: 'Matched' },
             { value: 'Unmatched', label: 'Unmatched' },

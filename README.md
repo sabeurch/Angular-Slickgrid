@@ -20,7 +20,8 @@ Refer to the [Wiki - HOWTO Step by Step](https://github.com/ghiscoding/angular-s
 The Wiki is where all the documentation and instructions will go, so please consult the [Angular-Slickgrid - Wiki](https://github.com/ghiscoding/Angular-Slickgrid/wiki) before opening any issues. The [Wiki - HOWTO](https://github.com/ghiscoding/Angular-Slickgrid/wiki/HOWTO---Step-by-Step) is a great place to start with. You can also take a look at the [Demo page](https://ghiscoding.github.io/Angular-Slickgrid), it includes sample for most of the features and it keeps growing (so you might want to consult it whenever a new version comes out).
 
 ### Use Case Documentation
-- [Bank Reconciliation Features](BANK_RECONCILIATION_FEATURES.md) - Learn which Angular-Slickgrid features are ideal for building bank reconciliation solutions
+- **[Bank Reconciliation Quick Reference](BANK_RECONCILIATION_QUICK_REFERENCE.md)** - Quick answer: which features are used in bank reconciliation solutions?
+- [Bank Reconciliation Features (Detailed)](BANK_RECONCILIATION_FEATURES.md) - Comprehensive guide to Angular-Slickgrid features for bank reconciliation
 
 
 ## Main features
